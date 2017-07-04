@@ -1,0 +1,33 @@
+{
+  "name": "http-file",
+  "version": "1.0.0",
+  "description": "Store and load HTTP request/response files.",
+  "main": "dist/index.js",
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "test": "cd spec && mocha --compilers ts:ts-node/register,tsx:ts-node/register .",
+    "build": "cp -R src/ dist/ && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mappies/http-file.git"
+  },
+  "author": "Nithiwat Kampanya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mappies/http-file/issues"
+  },
+  "homepage": "https://github.com/mappies/http-file#readme",
+  "dependencies": {
+    "@types/node": "^8.0.7",
+    "ts-node": "^3.1.0",
+    "typescript": "^2.4.1"
+  },
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2",
+    "typings": "^2.1.1"
+  }
+}
